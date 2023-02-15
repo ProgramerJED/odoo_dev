@@ -715,10 +715,13 @@ def connection_info_for(db_or_uri):
         us = urls.url_parse(db_or_uri)
         if len(us.path) > 1:
             db_name = us.path[1:]
+            print(db_name)
         elif us.username:
             db_name = us.username
+            print(db_name)
         else:
             db_name = us.hostname
+            print(db_name)
         return db_name, {'dsn': db_or_uri, 'application_name': app_name}
 
     connection_info = {'database': db_or_uri, 'application_name': app_name}
