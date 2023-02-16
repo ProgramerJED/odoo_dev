@@ -1,1 +1,1 @@
-web: python odoo-bin --p=$PORT --addons-path=addons,odoo/addons --config odoo.conf -i base
+web: python odoo-bin --http-port=$PORT --addons-path=addons,odoo/addons --config odoo.conf -i base
