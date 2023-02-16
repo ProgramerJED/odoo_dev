@@ -1,1 +1,1 @@
-web: python odoo-bin --addons-path=addons,odoo/addons -c odoo.conf
+web: python odoo-bin --addons-path=addons,odoo/addons --config odoo.conf
